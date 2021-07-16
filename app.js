@@ -9,9 +9,15 @@ setInterval(() => {
     let seconds = date.getSeconds();
     let day_night = 'AM'
 
-    if (hours > 12) {
+    if (hours > 12) 
+    {
         hours -= 12;
         day_night = 'PM';
+    }
+
+    if(hours == 0)
+    {
+        hours = '12';
     }
 
     if (hours < 10) {
